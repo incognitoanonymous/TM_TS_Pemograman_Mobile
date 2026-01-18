@@ -1,0 +1,51 @@
+name: my_book_app
+description: "flutter_application_1"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  # Gunakan versi Dart 3.0 ke atas agar aman dan cepat
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Library Penting untuk Chapter 9-15 ---
+  
+  # Untuk koneksi ke Google Books API (Wajib Update)
+  http: ^1.2.0
+
+  # Untuk membuka link beli buku (Wajib Update)
+  url_launcher: ^6.2.0
+
+  # Untuk menampilkan icon yang bagus
+  cupertino_icons: ^1.0.2
+  
+  # Library tambahan (Opsional, aktifkan jika nanti error butuh ini)
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  flutter_html: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Untuk testing standar
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Aset Gambar (Pastikan folder assets sudah kamu buat)
+  assets:
+     - assets/book_cover.png
+     - assets/flutter_icon.png
+
+  
+  # Font (Hanya aktifkan jika kamu sudah punya file font-nya)
+  # fonts:
+  #   - family: Pangolin
+  #     fonts:
+  #       - asset: assets/fonts/Pangolin-Regular.ttf
